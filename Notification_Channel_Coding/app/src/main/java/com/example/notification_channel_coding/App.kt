@@ -3,6 +3,7 @@ package com.example.notification_channel_coding
 import android.app.Application
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.graphics.Color
 import android.os.Build
 
 class App : Application() {
@@ -10,7 +11,13 @@ class App : Application() {
     companion object {
         val CHANNEL_1_ID = "channel1"
         val CHANNEL_2_ID = "channel2"
+
+        val putExtraText = "toastMessage"
+
+//        var MESSAGES:MutableList<Message> = ArrayList<Message>()
     }
+
+
 
     override fun onCreate() {
         super.onCreate()
@@ -41,6 +48,9 @@ class App : Application() {
                 NotificationManager.IMPORTANCE_HIGH
             ).apply {
                 description = "This is channel 2"
+                enableVibration(true)
+                lightColor=Color.RED
+                vibrationPattern=longArrayOf(100, 200, 300, 400, 500, 400, 300, 200, 400)
             }
 
             // Register the channel with the system

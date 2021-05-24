@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Notification_Channel_Coding</string>
+    <string name="long_dummy_text">If you can estimate how much of the operation is complete at any time, use the “determinate” form of the indicator (as shown above) by calling setProgress(max, progress, false). The first parameter is what the "complete" value is (such as 100); the second is how much is currently</string>
 </resources>

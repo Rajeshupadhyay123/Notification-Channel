@@ -19,6 +19,7 @@
         </activity>
 
         <receiver android:name=".NotificationReceiver"/>
+        <receiver android:name=".DirectReplyReceiver"/>
     </application>
 
 </manifest>
